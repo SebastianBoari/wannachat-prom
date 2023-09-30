@@ -1,0 +1,19 @@
+{
+  "name": "wannachat",
+  "version": "1.0.0",
+  "description": "Promotional homepage for the Wannachat chat application",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "sass --watch dev/scss/index.scss:public/css/index.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.50.0"
+  },
+  "dependencies": {
+    "sass": "^1.68.0"
+  }
+}

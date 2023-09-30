@@ -1,0 +1,18 @@
+/* HEADER Y NAVBAR */
+.header {
+    @include flex(row, wrap, space-between, center, 0);
+    background-color: $blue;
+    padding: $l-space $extreme-space;
+
+    .header__left {
+        .header__img {
+            max-width: 25rem;
+        }
+    }
+
+    .header__navbar {
+        .navbar__buttons {
+            @include flex(row, wrap, space-between, center, $xl-space);
+        }
+    }
+}

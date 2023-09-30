@@ -1,0 +1,127 @@
+.welcome {
+    @include flex(row, wrap, space-between, start, 0);
+    padding: $xl-space $extreme-space;
+    background-color: $blue;
+
+    .welcome__text {
+        @include flex(column, nowrap, start, space-between, $xl-space);
+        max-width: 47rem;
+
+        .welcome__text-header {
+            @include flex(column, nowrap, start, space-between, $m-space);
+
+            .welcome__title {
+                font-family: 'Poppins', sans-serif;
+                font-size: 8.8em;
+                font-weight: 500;
+                color: $white;
+            }
+
+            .welcome__descrip {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: $m-txt;
+                color: $white;
+            }
+        }
+
+        .welcome__buttons {
+            @include flex(row, wrap, start, center, $l-space);
+
+            .getstart-btn {
+                font-size: 24px;
+                font-weight: 500;
+                padding: $m-space $l-space;
+            }
+
+            .learnmore-btn {
+                font-size: 24px;
+                font-weight: 500;
+                padding: $m-space $l-space;
+            }
+        }
+    }
+
+    .welcome__right {
+        .welcome__img {
+            max-width: 62rem;
+        }
+    }
+}
+
+
+.article__description {
+    @include flex(column, nowrap, center, center, $xl-space);
+    padding: $xl-space $extreme-space;
+    background-color: $white;
+
+    .description__text {
+        @include flex(column, nowrap, center, center, $xl-space);
+        max-width: 62rem;
+
+        .text__title {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: $xl-txt;
+            font-weight: 500;
+            color: #3B454D;
+        }
+
+        p {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: $m-txt;
+            font-weight: 400;
+            color: #3B454D;
+        }
+    }
+
+    .wannachat__capture {
+        max-width: 96rem;
+    }
+}
+
+.article__solutions {
+    @include flex(row, wrap, space-between, center, 0);
+    padding: $xl-space $extreme-space;
+    background-color: $grey;
+
+    .clients__capture {
+        max-width: 62rem;
+    }
+
+    .solutions__description {
+        @include flex(column, nowrap, start, space-between, $l-space);
+        max-width: 54rem;
+
+        .description__header {
+            @include flex(column, nowrap, start, space-between, $l-space);
+
+            h3 {
+                font-family: 'Poppins', sans-serif;
+                font-size: 6.5em;
+                font-weight: 400;
+                color: #3B454D;
+            }
+
+            p {
+                font-family: 'Poppins', sans-serif;
+                font-size: $l-txt;
+                font-weight: 400;
+                color: #3B454D;
+            }
+        }
+
+        .solutions__buttons {}
+
+        #space-line {}
+
+        .description__rating {
+            .stars {
+                max-width: 12.8rem;
+            }
+
+            .rating__fact {}
+        }
+    }
+}
