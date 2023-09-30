@@ -67,6 +67,24 @@ body {
   box-shadow: 2px 3px 14px -4px rgba(0, 0, 0, 0.5);
 }
 
+.pill-primary {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8em;
+  font-weight: 400;
+  border: solid 2px #1E71FF;
+  padding: 0.8rem 3.2rem;
+  border-radius: 35px;
+  background-color: #1E71FF;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.pill-primary:hover {
+  -webkit-box-shadow: 2px 3px 14px -4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 3px 14px -4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 3px 14px -4px rgba(0, 0, 0, 0.5);
+}
+
 /* HEADER Y NAVBAR */
 .header {
   display: flex;
@@ -196,7 +214,7 @@ body {
   align-items: center;
   gap: 0;
   padding: 6.4rem 32rem;
-  background-color: #F2F4F7;
+  background-color: #E9F1FF;
 }
 .article__solutions .clients__capture {
   max-width: 62rem;
@@ -230,8 +248,48 @@ body {
   font-weight: 400;
   color: #3B454D;
 }
+.article__solutions .solutions__description .solutions__buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 3.2rem;
+}
+.article__solutions .solutions__description .solutions__buttons .tryit-btn {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 1.6rem 3.2rem;
+}
+.article__solutions .solutions__description .solutions__buttons .getdemo-btn {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 1.6rem 3.2rem;
+}
+.article__solutions .solutions__description #space-line {
+  width: 50%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.article__solutions .solutions__description .description__rating {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 3.2rem;
+}
 .article__solutions .solutions__description .description__rating .stars {
   max-width: 12.8rem;
+}
+.article__solutions .solutions__description .description__rating .rating__fact {
+  max-width: 36rem;
+  font-size: 2.4em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.article__solutions .solutions__description .description__rating .rating__fact span {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=index.css.map */

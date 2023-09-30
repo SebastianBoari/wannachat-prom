@@ -112,16 +112,46 @@
             }
         }
 
-        .solutions__buttons {}
+        .solutions__buttons {
+            @include flex(row, wrap, start, center, $l-space);
 
-        #space-line {}
+            .tryit-btn {
+                font-size: 24px;
+                font-weight: 500;
+                padding: $m-space $l-space;
+            }
+
+            .getdemo-btn {
+                font-size: 24px;
+                font-weight: 500;
+                padding: $m-space $l-space;
+            }
+        }
+
+        #space-line {
+            width: 50%;
+            height: 2px;
+            background-color: rgba(0, 0, 0, 15%)
+        }
 
         .description__rating {
+            @include flex(row, wrap, start, center, $l-space);
+
             .stars {
                 max-width: 12.8rem;
             }
 
-            .rating__fact {}
+            .rating__fact {
+                max-width: 36rem;
+                font-size: $l-txt;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+
+                span {
+                    font-weight: 600;
+                }
+
+            }
         }
     }
 }
