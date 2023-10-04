@@ -4,97 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./public/assets/icons/wannachat-icon-2.png">
+    <link rel="icon" href="./public/assets/icons/wannachat-icon.png">
     <link rel="stylesheet" href="./public/css/index.css">
     <title>WannaChat</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__left">
-            <a href="./index.html"><img class="header__img" src="./public/assets/icons/wannachat-logo.jpg"
-                    alt="Wannachat logo"></a>
+    <!-- header -->
+    <header class="header parent">
+        <div class="header_container children">
+            <div class="brand">
+                <a href="./index.html" class="brand_link"><img class="brand_logo"
+                        src="./public/assets/icons/wannachat-logo.jpg" alt="Wannachat logo"></a>
+            </div>
+
+            <nav class="navbar">
+                <ul class="navbar_list">
+                    <li class="list_item">
+                        <a class="item_link" href="./index.html">Home <div id="line"></div></a>
+
+                    </li>
+
+                    <li class="list_item">
+                        <a class="item_link" href="./public/pages/contact.html">Contact <div id="line"></div></a>
+                    </li>
+
+                    <li class="list_item">
+                        <a class="item_link" href="./public/pages/about.html">About
+                            Us <div id="line"></div></a>
+                    </li>
+
+                    <li class="list_item">
+                        <a class="item_link-getStart pill-light" href="./public/pages/session.html">Get
+                            start</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-
-        <nav class="header__navbar">
-            <ul class="navbar__buttons">
-                <li class="navbar__item">
-                    <a class="navbar__link navbar-button" href="./index.html">Home</a>
-                </li>
-
-                <li class="navbar__item">
-                    <a class="navbar__link navbar-button" href="./public/pages/contact.html">Contact</a>
-                </li>
-
-                <li class="navbar__item">
-                    <a class="navbar__link navbar-button" href="./public/pages/about.html">About
-                        Us</a>
-                </li>
-
-                <li class="navbar__item">
-                    <a class="navbar__link pill-light" href="./public/pages/session.html">Get
-                        start</a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
-    <main class="welcome">
-        <section class="welcome__text">
-            <div class="welcome__text-header">
-                <h1 class="welcome__title">Have your best chat</h1>
-                <h3 class="welcome__descrip">Fast, easy & unlimited conference call services</h3>
+    <!-- block 1 -->
+    <main class="welcome parent">
+        <div class="children welcome_container">
+            <section class="welcome_section">
+
+                <div class="welcome_section-header">
+                    <h1 class="header_title">Have your best chat</h1>
+                    <h3 class="header_description">Fast, easy & unlimited conference call services</h3>
+                </div>
+
+                <div class="welcome_section-buttons">
+                    <a class="pill-light button_getstart" href="./public/pages/session.html">Get start</a>
+                    <a class="pill-light-outline button_learnmore" href="./public/pages/about.html">Learn more</a>
+                </div>
+
+            </section>
+
+            <div class="welcome_banner">
+                <img class="banner_image" src="./public/assets/img/home-banner.png"
+                    alt="Two people chatting on WannaChat.">
             </div>
-            <div class="welcome__buttons">
-                <a class="pill-light getstart-btn" href="./public/pages/session.html">Get start</a>
-                <a class="pill-outline-light learnmore-btn" href="./public/pages/about.html">Learn more</a>
-            </div>
-        </section>
-        <div class="welcome__right">
-            <img class="welcome__img" src="./public/assets/img/home-banner.png" alt="">
         </div>
     </main>
 
-    <article class="article__description">
-        <section class="description__text">
-            <h3 class="text__title">Instant group Chats</h3>
-            <p>
-                Designed with the specific needs of modern businesses in mind, this platform is the ultimate solution to
-                promote effective internal communication. With a focus on connectivity and productivity, this enterprise
-                chat application offers a wide range of innovative features.
-            </p>
-        </section>
-        <img class="wannachat__capture" src="./public/assets/img/app-1.jpg" alt="Capture of application wannachat">
+    <!-- block 2 -->
+    <article class="features" class="parent">
+        <div class="children features_container">
+            <section class="features_section">
+                <h3 class="features_section-title">Instant group Chats</h3>
+                <p class="features_section-description">
+                    Designed with the specific needs of modern businesses in mind, this platform is the ultimate
+                    solution to
+                    promote effective internal communication. With a focus on connectivity and productivity, this
+                    enterprise
+                    chat application offers a wide range of innovative features.
+                </p>
+            </section>
+            <img class="features_image" src="./public/assets/img/app-1.jpg" alt="Capture of application wannachat">
+        </div>
     </article>
 
+    <!-- block 3 -->
+    <article class="solutions">
+        <div class="solutions_clients">
+            <img class="clients_image" src="./public/assets/img/solutions.png" alt="Capture of our clients">
+        </div>
 
-    <article class="article__solutions">
-        <img class="clients__capture" src="./public/assets/img/solutions.png" alt="Capture of our clients">
+        <section class="solutions_section">
+            <header class="solutions_section-header">
+                <h3 class="header_title">Perfect Solution for Small Businesses</h3>
+                <p class="header_description">Pricing plans that fit like a glove</p>
+            </header>
 
-        <section class="solutions__description">
-            <div class="description__header">
-                <h3>Perfect Solution for Small Businesses</h3>
-                <p>Pricing plans that fit like a glove</p>
-            </div>
-
-            <div class="solutions__buttons">
-                <a class="pill-primary tryit-btn" href="./public/pages/session.html">Try it Free</a>
-                <a class="pill-light getdemo-btn" href="./public/pages/about.html">Get a Demo</a>
+            <div class="solutions_section-buttons">
+                <a class="pill-primary button_tryItFree" href="./public/pages/session.html">Try it Free</a>
+                <a class="pill-light button_getADemo" href="./public/pages/about.html">Get a Demo</a>
             </div>
 
             <span id="space-line"></span>
 
-            <div class="description__rating">
-                <img class="stars" src="./public/assets/img/stars.png" alt="">
-                <p class="rating__fact"><span>Over 5000 businesses</span> use our chat and they rate us <span>5
+            <div class="solutions_section-rating">
+                <img class="rating_stars" src="./public/assets/img/stars.png" alt="Five stars">
+                <p class="rating_fact"><span>Over 5000 businesses</span> use our chat and they rate us <span>5
                         stars</span></p>
             </div>
+
         </section>
     </article>
 
-    <footer>
-
+    <!-- footer -->
+    <footer class="footer parent">
+        <div class="footer_header children">
+            <img class="footer_header-icon" src="./public/assets/icons/wannachat-logo.jpg" alt="">
+            <h3 class="footer_header-subtitle">The last teamchat you will ever need</h3>
+        </div>
+        <div class="footer_copyrigth children">
+            <p class="footer_copyrigth-text">©Copyright WannaChat inc</p>
+        </div>
     </footer>
+
     <script src="./public//js/index.js"></script>
 </body>
 

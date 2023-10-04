@@ -1,64 +1,62 @@
-.navbar-button {
-    font-family: 'Poppins', sans-serif;
-    font-size: $m-txt;
-    font-weight: 400;
-    color: $white;
-    transition: all .3s;
-}
-
-.navbar-button:hover {}
-
 .pill-light {
     font-family: 'Poppins', sans-serif;
     font-size: $m-txt;
     font-weight: 400;
+    text-decoration: none;
 
     border: solid 2px $white;
-    padding: $s-space $l-space;
+    padding: $s-space $m-space2;
     border-radius: 35px;
     background-color: $white;
     color: $blue;
-    transition: all .3s;
+    transition: box-shadow .3s ease-in;
 }
 
 .pill-light:hover {
+    transition: box-shadow .3s ease;
     -webkit-box-shadow: 2px 3px 14px -4px rgba(0, 0, 0, 0.50);
     -moz-box-shadow: 2px 3px 14px -4px rgba(0, 0, 0, 0.50);
     box-shadow: 2px 3px 14px -4px rgba(0, 0, 0, 0.50);
 }
 
-.pill-outline-light {
+
+.pill-light-outline {
     font-family: 'Poppins', sans-serif;
     font-size: $m-txt;
     font-weight: 400;
+    text-decoration: none;
 
     border: solid 2px $white;
     border-radius: 35px;
     background-color: rgba(0, 0, 0, 0);
     color: $white;
-    transition: all .3s;
+    transition: box-shadow .3s ease-in;
 }
 
-.pill-outline-light:hover {
+.pill-light-outline:hover {
+    transition: box-shadow .3s ease;
     -webkit-box-shadow: 2px 3px 14px -4px rgba(0, 0, 0, 0.50);
     -moz-box-shadow: 2px 3px 14px -4px rgba(0, 0, 0, 0.50);
     box-shadow: 2px 3px 14px -4px rgba(0, 0, 0, 0.50);
 }
 
+
 .pill-primary {
     font-family: 'Poppins', sans-serif;
     font-size: $m-txt;
     font-weight: 400;
+    text-decoration: none;
 
     border: solid 2px $blue;
     padding: $s-space $l-space;
     border-radius: 35px;
     background-color: $blue;
     color: $white;
-    transition: all .3s;
+    transition: box-shadow .3s ease-in;
 }
 
 .pill-primary:hover {
+    transition: box-shadow .3s ease;
     -webkit-box-shadow: 2px 3px 14px -4px rgba(0, 0, 0, 0.50);
     -moz-box-shadow: 2px 3px 14px -4px rgba(0, 0, 0, 0.50);
     box-shadow: 2px 3px 14px -4px rgba(0, 0, 0, 0.50);
