@@ -4,9 +4,7 @@
     background-color: $blue;
 
     .welcome_container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
+        @include flex(row, wrap, space-between, center, 0);
 
         .welcome_section {
             @include flex(column, nowrap, start, space-between, $xl-space);
@@ -95,16 +93,19 @@
 
 
 .solutions {
-    @include flex(row, wrap, space-between, center, 0);
-    padding: $xl-space $extreme-space;
+    padding: $xl-space 0;
     background-color: $grey;
+
+    &_container {
+        @include flex(row, wrap, space-between, center, 0);
+    }
 
     &_clients {
         .clients_image {
+            max-height: 52rem;
             max-width: 62rem;
         }
     }
-
 
     .solutions_section {
         @include flex(column, nowrap, start, space-between, $l-space);
@@ -115,7 +116,7 @@
 
             .header_title {
                 font-family: 'Poppins', sans-serif;
-                font-size: 6.5em;
+                font-size: 5.2em;
                 font-weight: 400;
                 color: #3B454D;
             }
@@ -132,13 +133,13 @@
             @include flex(row, wrap, start, center, $l-space);
 
             .button_tryItFree {
-                font-size: 24px;
+                font-size: $l-txt;
                 font-weight: 500;
                 padding: $m-space $l-space;
             }
 
             .button_getADemo {
-                font-size: 24px;
+                font-size: $l-txt;
                 font-weight: 500;
                 padding: $m-space $l-space;
             }

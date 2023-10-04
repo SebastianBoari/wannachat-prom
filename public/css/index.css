@@ -189,9 +189,12 @@ html {
   background-color: #1E71FF;
 }
 .welcome .welcome_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
+  gap: 0;
 }
 .welcome .welcome_container .welcome_section {
   display: flex;
@@ -282,16 +285,19 @@ html {
 }
 
 .solutions {
+  padding: 6.4rem 0;
+  background-color: #E9F1FF;
+}
+.solutions_container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 0;
-  padding: 6.4rem 32rem;
-  background-color: #E9F1FF;
 }
 .solutions_clients .clients_image {
+  max-height: 52rem;
   max-width: 62rem;
 }
 .solutions .solutions_section {
@@ -313,7 +319,7 @@ html {
 }
 .solutions .solutions_section-header .header_title {
   font-family: "Poppins", sans-serif;
-  font-size: 6.5em;
+  font-size: 5.2em;
   font-weight: 400;
   color: #3B454D;
 }
@@ -332,12 +338,12 @@ html {
   gap: 3.2rem;
 }
 .solutions .solutions_section-buttons .button_tryItFree {
-  font-size: 24px;
+  font-size: 2.4em;
   font-weight: 500;
   padding: 1.6rem 3.2rem;
 }
 .solutions .solutions_section-buttons .button_getADemo {
-  font-size: 24px;
+  font-size: 2.4em;
   font-weight: 500;
   padding: 1.6rem 3.2rem;
 }
